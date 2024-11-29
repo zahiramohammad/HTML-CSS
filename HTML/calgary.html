@@ -2,6 +2,14 @@
 <html>
     <head>
         <title> Calgary Tourism</title>
+        <style>
+            .form-container {
+                display: flex;
+                justify-content: flex-end;
+                padding: 20px;
+                background-color: #f8f9fa;
+            }
+        </style>
     </head>
 
     <body>
@@ -70,6 +78,29 @@
                 </tbody>
             </table>
         </div>
+
+        <div class = "form-container">
+
+            <form id="form1" action="index.html" method="post">
+                <!-- Label and Input for Name -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                <!-- Label and Input for Email -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <!-- Label and Input for Password -->
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
+            </form>
+
+        </div>
+    </body>
+          
 
 
     </body>

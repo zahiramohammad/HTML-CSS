@@ -1,0 +1,56 @@
+/* 
+Cascading Style Sheet 
+Inline CSS - Enclosed in an element tag using style keyword
+Internal styling => enclosing the style tag in the head section of html
+Extrenal styling => Having a separate style sheet and linking it in html using <link> tag
+id selector always takes the top priority, then comes class and then tag selector
+*/
+
+/* Tag selector 
+* {
+    background-color: blanchedalmond;
+}
+
+p {
+    color : blue;
+}
+
+/* class selector */
+/* .schedule {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+/* id selector */
+/* #clickMe {
+    text-align: center;
+    color : red
+} */
+
+/* .form1{
+
+} */ 
+/* 
+.display  {
+    background-color: rgb(40, 112, 176);
+    display: flex;
+} */
+
+/* section {
+    background-color: blueviolet;
+    margin: auto;
+} */
+
+.display section {
+    background-color: rgb(167, 125, 52);
+    border : 1px solid blue;
+    padding : 10px;
+    margin : 5px;
+}
+
+.display {
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+
+}
