@@ -1,0 +1,106 @@
+/*  CSS Variables - var()
+var(--name, value) name is mandatory, value is optional.
+value is the default value it has to take if no value given
+to the variable.
+:root{} is used for declaring a global variable.
+Eg. :root { --blue : #ffffff }
+blue is the name of the variable */
+
+:root {
+    --background-color : yellow;
+
+}
+
+html, body {
+    height: 100%;
+    width: 100%
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-color: rgb(170, 116, 45);
+    border: 2px solid green; */
+}
+
+.card {
+    width: 450px;
+    height: 250px;
+    background: linear-gradient(#f8f8f8, #fff);
+    box-shadow: 0 8px 16px -8px rgba(0,0,0, 0.4);
+    border-radius: 6px;
+    overflow: hidden;
+    /* overflow-x, overflow-y  */
+    /* overflow: scroll; */
+    /* position: absolute/relative/sticky/fixed/static */
+    position: relative;
+    margin: 10px;
+
+}
+
+.card .left-info{
+    float: left;
+    width: 150px;
+    height: 100%;
+    position: relative;
+    background: var(--background-color );
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction : column; */
+    align-items: center;
+    justify-content: center;
+}
+
+.card .left-info img{
+    height: 100px;
+    width: auto;
+}
+
+.card .left-info #user-level, .card .left-info #user-points{
+    color: #361c1c;
+    text-transform: uppercase;
+    background: rgba(0,0,0, 0.25);
+    padding: 1px 15px 1px 15px;
+    border-radius: 100px;
+    font-size: 11px;
+    font-weight: bold;
+
+}
+
+.card .right-info {
+    width: calc(100% - 150px);
+    height: 100%;
+    /* clear: left */
+    float: right;
+}
+
+.card > .right-info > header > h1{
+    text-align: center;
+    
+
+}
+
+p#user-description {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 13px;
+    padding-left: 10px;
+
+}
+
+div.linkedin-link{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.fa-linkedin-square{
+    font-size: 36px;
+}
+
+.fa-linkedin-square:hover{
+    color : red;
+
+}
